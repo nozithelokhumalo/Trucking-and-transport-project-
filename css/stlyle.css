@@ -161,13 +161,15 @@ header .header-inner .hamburger p{
     margin: 4%;
  }
  
- #about .about-inner div h2{
+ #about .about-inner div h1{
    padding: 10px;
     gap: 5%;
 }
 #about .about-inner div p {
    list-style: none;
    padding: 7px;
+   font-size: larger;
+   font-weight: 400;
    
 } 
 
@@ -200,12 +202,7 @@ header .header-inner .hamburger p{
 
 
  /* my services section style ends here  */
-  /* this is my image style section  */
-      .image .img{
-        width: 100px;
-        height: 100vh;
-      }
-      /* my image section style ends here  */
+
 
       /* this is my testimonials section style*/
      #testimonials .testimonials-inner .testimonials-cards {
@@ -226,43 +223,46 @@ header .header-inner .hamburger p{
 }
  /* my testimonials section style ends here */
 
-    
-    
+   /* this is my request section stlyes   */
     #request {
         display: grid;
         align-items: center;
         text-align: center;
         justify-content: center;
-        background-color: grey;
+        background-color: rgb(231, 227, 227);
         padding: 50px;
  }
-  #request .request-forms p {
+  #request .request-forms h3 {
         padding: 3%;
+        margin-left: 60%;
     }
   #request .request-forms .forms .yourname{
       padding: 1% 3% 2% 4%;
-      width: 30%;
+      width: 40%;
       height: 3%;
+      
     }
     #request .request-forms .forms .youremail{
       padding: 1% 3% 2% 4%;
-      width: 30%;
+      width: 40%;
+      margin-left: 3%;
     }
     #request .request-forms .forms .yourmessage{
-      padding: 10%;
-      width: 30%;
+      padding-right: 50%;
+      padding-bottom: 20%;
+      width: 50%;
+      margin-top: 2%;
     }
-  
+  /* my request section style ends here */
+
      /* this is my footer section style  */
-      #footer{
+#footer{
       background-color: black;
      padding: 5%;
       color: #fff;
       display: grid;
-      
-    
- }
-     #footer .footer-inner .footer-inner-cards{
+}
+ #footer .footer-inner .footer-inner-cards{
       display: flex;
       justify-content: center;
      text-align: center;
@@ -280,11 +280,179 @@ header .header-inner .hamburger p{
       padding-top: 5%;
       display: flex;
       justify-content: center;
-      align-items: center;} 
+      align-items: center;
+   } 
    
    #footer img{
      width: 30%;
      padding-left: 35%;
    }
+   /* my footer section style ends here  */
+   /* this is my small screen  */
+   @media(min-width:320px){
+   #hero{
+   background-image: url(../images/Rectangle\ 1.png);
+   background-position: center center;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   top: 100%;
+ }
+#hero .hero-inner{
+    color: #fff;
+    padding-top: 400px;
+    display: flex;
+    gap: 50%;
+    
+}
+#hero .hero-inner h1{
+   padding-left: 10%;
+   font-size: medium;
+}
+      #about .about-inner {
+         display: grid;
+         margin: 4%;
+         text-align: center;
+      }
+
+  #about .about-inner img{
+   width: 300px;
+   
+  }    
       
-      /* my footer section style ends here  */
+
+ #services {
+   flex-wrap: wrap;
+   overflow-x: visible;
+}
+#services .services-inner h2 {
+   display: flex;
+    padding-bottom: 10%;
+}
+
+#services .services-inner {
+   display: flex;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   padding: 3%;
+}
+
+#services .services-cards .img {
+   width: 100%;
+   gap: 0%;
+}
+
+#services-inner {
+   flex: 0 0 33%;
+}
+
+ #testimonials .testimonials-inner .testimonials-cards {
+      display: grid;
+     justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+#request {
+  margin-top: 15%;
+   padding: 50px;
+}
+
+#image .image-inner img{
+   width: 325px;
+   height: 60vh;
+   
+}
+
+#footer{
+   background-color: black;
+  padding: 30%;
+   
+}
+#footer .footer-inner .footer-inner-cards {
+   display: grid;
+   gap: 5%;
+  }
+
+#footer .footer-inner .footer-inner-cards h5{
+   padding-bottom: 5%;
+   font-size: small;
+   align-items: center;
+}
+#footer span{
+   padding: 20%;
+   display: flex;
+ 
+}
+#footer .img{
+   width: 200%;
+   margin-left: 10%;
+ }
+ #footer hr{
+   width: 120%;  
+   }
+}
+   /* my small screen ends here  */
+
+   /* this is my laptop screen  */
+ @media(min-width: 1200px){
+   #hero .hero-inner{
+      color: #fff;
+      padding-top: 550px;
+      display: flex;
+      gap: 50%;
+      
+  }
+  #hero .hero-inner h1{
+   font-size: x-large;
+}
+#hero .hero-inner p{
+   font-size: medium;
+}
+   #about .about-inner {
+      display: flex;
+      margin: 4%;
+   }
+   #about .about-inner img{
+      width: 600px;
+      
+     }    
+   #services .services-inner h2{
+      display: flex;
+      
+   } 
+   #testimonials .testimonials-inner .testimonials-cards {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding-bottom: 10%;
+   }
+   #request {
+      margin-top: 3%;
+       padding: 40px;
+    }
+   #footer{
+      background-color: black;
+     padding: 7%;
+      
+   }
+   
+   #footer .footer-inner .footer-inner-cards {
+      display: flex;
+      gap: 20%;
+     }
+     #footer img{
+      width: 35%;
+      padding-left: 35%;
+    }
+    #footer span{
+      padding-top: 3%;
+      padding-bottom: 3%;
+      font-size: large;
+      font-weight: 600;
+   } 
+   #footer .footer-inner .footer-inner-cards h5{
+      padding-bottom: 5%;
+      font-size: larger;
+   
+   } 
+ }  
