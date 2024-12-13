@@ -306,8 +306,13 @@ header .header-inner .hamburger p{
     
 }
 #hero .hero-inner h1{
-   padding-left: 10%;
-   font-size: medium;
+   padding-left: 7%;
+   font-size: small;
+   padding-top: 10%;
+}
+#hero .hero-inner p{
+   padding-top: 10%;
+   font-size: small;
 }
       #about .about-inner {
          display: grid;
@@ -325,9 +330,12 @@ header .header-inner .hamburger p{
    flex-wrap: wrap;
    overflow-x: visible;
 }
-#services .services-inner h2 {
+
+#services  h2 {
    display: flex;
-    padding-bottom: 10%;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 4%;
 }
 
 #services .services-inner {
@@ -339,7 +347,7 @@ header .header-inner .hamburger p{
 
 #services .services-cards .img {
    width: 100%;
-   gap: 0%;
+   
 }
 
 #services-inner {
@@ -365,7 +373,8 @@ header .header-inner .hamburger p{
 
 #footer{
    background-color: black;
-  padding: 30%;
+  padding: 15%;
+  text-align: center;
    
 }
 #footer .footer-inner .footer-inner-cards {
@@ -379,34 +388,83 @@ header .header-inner .hamburger p{
    align-items: center;
 }
 #footer span{
-   padding: 20%;
+   padding: 15%;
    display: flex;
  
 }
-#footer .img{
-   width: 200%;
-   margin-left: 10%;
+#footer img{
+   padding-left: 10%;
+   width: 100%;
+   
+  
  }
  #footer hr{
-   width: 120%;  
+   width: 100%;  
    }
 }
    /* my small screen ends here  */
-
+   @media(min-width:375px){
+      #hero .hero-inner h1{
+         padding-left: 7%;
+         font-size: medium;
+         padding-top: 40%;
+         
+      }
+      #hero .hero-inner p{
+         padding-top: 40%;
+         font-size: medium;
+      }
+      #about .about-inner img{
+         width: 100%;
+         height: 100%;
+         
+        }  
+      
+      #services  h2 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: auto;
+      }
+      #image .image-inner img{
+         width: 100%;
+         height: 100%;
+         
+      }
+   }
+   /* this is my ipad screen  */
+   @media(min-width: 768px){
+      #hero .hero-inner h1{
+         font-size: xx-large;
+         font-weight: bolder ;
+      }
+      #hero .hero-inner p{
+         font-size: x-large;
+         font-weight: 400;
+      }
+      #about .about-inner img{
+         width: 700px;
+         
+        }    
+}
+   /* my ipad screen ends here  */
    /* this is my laptop screen  */
  @media(min-width: 1200px){
+   #hero{
+      height: 150vh;
+   }
    #hero .hero-inner{
       color: #fff;
-      padding-top: 550px;
       display: flex;
       gap: 50%;
       
   }
   #hero .hero-inner h1{
    font-size: x-large;
+  
 }
 #hero .hero-inner p{
-   font-size: medium;
+   font-size: x-large;
 }
    #about .about-inner {
       display: flex;
@@ -417,14 +475,26 @@ header .header-inner .hamburger p{
       
      }    
    #services .services-inner h2{
-      display: flex;
+     display: flex;
+     align-items: center;
+    
       
    } 
+   #services .services-inner .services-cards {
+      display: flex;
+     justify-content: center;
+     gap: 10%;
+   }
    #testimonials .testimonials-inner .testimonials-cards {
       display: flex;
       text-align: center;
       justify-content: space-between;
       padding-bottom: 10%;
+   }
+   #image .image-inner img{
+      width: 100%;
+      height: 100%;
+      
    }
    #request {
       margin-top: 3%;
